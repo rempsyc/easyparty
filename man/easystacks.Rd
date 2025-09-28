@@ -4,7 +4,7 @@
 \alias{easystacks}
 \title{Launch the easystacks party function}
 \usage{
-easystacks(start = "6PM", end = "L8")
+easystacks(start = "6PM", end = "L8", line_length = 40)
 }
 \arguments{
 \item{start}{Character string. Default is \code{"6PM"}. Indicates when the
@@ -12,6 +12,9 @@ fun begins (pre-drinks are implied).}
 
 \item{end}{Character string. Default is \code{"L8"}. Indicates when the fun
 should theoretically end, but may extend with sufficient variance.}
+
+\item{line_length}{Length of line when formatting with
+\link[insight:format_message]{insight::format_message}.}
 }
 \value{
 A character string printed to the console with 🎉 flair.

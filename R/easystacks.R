@@ -8,6 +8,8 @@
 #'   fun begins (pre-drinks are implied).
 #' @param end Character string. Default is `"L8"`. Indicates when the fun
 #'   should theoretically end, but may extend with sufficient variance.
+#' @param line_length Length of line when formatting with
+#' [insight::format_message].
 #'
 #' @details
 #' The function prints a lighthearted invitation to the party,
@@ -21,12 +23,12 @@
 #' easystacks(start = "7PM", end = "midnight")
 #'
 #' @export
-easystacks <- function(start = "6PM", end = "L8") {
+easystacks <- function(start = "6PM", end = "L8", line_length = 40) {
   cat(
     insight::format_message(
       "\U1F389 Function successfully executed:\n",
-      "What priors should you come with? Strong effects of simple drinks (d > 0.80). High probability of regression, but it might just be a correlation. Nerdy stats jokes dangerously likely, but fun guaranteed. You've been warned.",
-      line_length = 40
+      "What priors should you come with? Strong effects of simple drinks (d > 0.80). High probability of regression, but it might just be a correlation. Nerdy stats jokes dangerously likely, but fun guaranteed. You've been warmed.",
+      line_length = line_length
     )
   )
 }
